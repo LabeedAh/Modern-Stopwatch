@@ -1,0 +1,111 @@
+/* Google fonts import link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: #5d5a61;
+}
+.wrapper{
+  user-select: none;
+  margin-bottom: 10px;
+}
+.wrapper .time{
+  height: 100px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.09);
+  padding: 0 10px;
+}
+.wrapper .time span{
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  color: #333;
+}
+.time span.colon{
+  width: 10px;
+}
+.time span.ms-colon,
+.time span.milliseconds{
+  color: #24eb0a;
+}
+.wrapper .buttons{
+  text-align: center;
+  margin-top: 20px;
+}
+.buttons button{
+  padding: 6px 16px;
+  outline: none;
+  border: none;
+  margin: 0 5px;
+  color: #3513ca;
+  background: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.09);
+  margin-top: 10px;
+}
+.buttons button.active,
+.buttons button.stopActive{
+  pointer-events: none;
+  opacity: 0.7;
+}
+.add_clock
+.btn_add_clock {
+  width: 100%;
+    padding-top: 15px;
+    padding: 15px 40px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.09);
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(238, 16, 16);
+    border-radius: 4px;
+}
+
+/* --Media Queries-- */
+@media (max-width: 470px) {
+  .wrapper .time span{
+width: 40px;
+text-align: center;
+font-size: 36px;
+font-weight: 500;
+color: #333;
+}
+.time span.ms-colon,
+.time span.milliseconds{
+  color: #24eb0a;
+}
+}
+
+@media (max-width: 388px) {
+  .wrapper .time span{
+width: 40px;
+text-align: center;
+font-size: 36px;
+font-weight: 500;
+color: #333;
+}
+.time span.ms-colon,
+.time span.milliseconds{
+  color: #24eb0a;
+}
+}
